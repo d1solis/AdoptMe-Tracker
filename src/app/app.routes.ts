@@ -4,6 +4,7 @@ import { OriginComponent } from './origin/origin.component';
 import { RarityComponent } from './rarity/rarity.component';
 import { CurrencyComponent } from './currency/currency.component';
 import { SearchComponent } from './search/search.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
@@ -13,6 +14,7 @@ export const routes: Routes = [
     {'path': 'rarity', 'title': 'rarity', component: RarityComponent},
     {'path': 'currency', 'title': 'currency', component: CurrencyComponent},
     {'path': 'search', 'title': 'search', component: SearchComponent},
+    {'path': 'dashboard', 'title': 'dashboard', component: DashboardComponent},
     {'path': '', 'redirectTo': '/home', 'pathMatch': 'full'},
     {'path': '**', component: PagenotfoundComponent}, // Wildcard route for a 404 page
 
