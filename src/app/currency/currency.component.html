@@ -1,4 +1,83 @@
-<div class="flex justify-center items-center h-screen bg-gray-800">
-    <h1 class="text-white text-4xl text-center">Currency works!</h1>
-</div>
+<!-- CURRENCY PAGE -->
 
+<section class="text-gray-600 body-font bg-gray-200">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">Adopt Me! Currency</h1>
+        <p class="mb-8 leading-relaxed">Find pets by the type of <b>currency</b> used to obtain them—whether it’s Bucks, Robux, event currency, or even free pets! Use this search tool to filter pets by the type of currency they require, making it easier to plan your next in-game purchase or trade!</p>
+        <div class="flex w-full md:justify-start justify-center items-end">
+          
+            <form action="/submit" method="post">
+
+                <label for="currency" class="minititle block mb-2 text-sm font-medium text-gray-900">Select one:</label>
+              
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  
+                  <select id="currency" name="currency" class="form-select text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 h-10 text-sm px-4 py-2">
+                    <option value="">-------- Please choose an option --------</option>
+                    <option value="Adopt Me Cash">Adopt Me! Cash</option>
+                    <option value="Free">Free</option>
+                    <option value="Gingerbread">Gingerbread</option>
+                    <option value="20 Brachiosaurs Fossils + Adopt Me Cash">20 Brachiosaurs Fossils + Adopt Me! Cash</option>
+                    <option value="20 Velociraptor Fossils + Adopt Me Cash">20 Velociraptor Fossils + Adopt Me! Cash</option>
+                    <option value="Beach Balls">Beach Balls</option>
+                    <option value="Candy Corn">Candy Corn</option>
+                    <option value="Cranky Coins">Cranky Coins</option>
+                    <option value="Easter Eggs">Easter Eggs</option>
+                    <option value="Galatic Pass Level">Galatic Pass Level</option>
+                    <option value="Galatic Shards">Galatic Shards</option>
+                    <option value="Hearts">Hearts</option>
+                    <option value="Ice Shards">Ice Shards</option>
+                    <option value="Lanterns">Lanterns</option>
+                    <option value="NPC Interaction">NPC Interaction</option>
+                    <option value="Pony Pass Level">Pony Pass Level</option>
+                    <option value="Robux">Robux</option>
+                    <option value="Shooting Stars">Shooting Stars</option>
+                    <option value="Stars">Stars</option>
+                    <option value="Sunshine Games Pass Level">Sunshine Games Pass Level</option>
+                    <option value="Tickets">Tickets</option>
+                    <option value="Yakgwa">Yakgwa</option>
+                    <option value="Pets Plus Subscription USD">Pets Plus Subscription (USD)</option>
+                    <option value="Purple Pumpkins">Purple Pumpkins</option>
+                  </select>
+              
+                  <input type="submit" class="text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm h-10 px-4 py-2" value="Submit">
+              
+                </div>
+              </form>
+              
+
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="/assets/currencypagepic.png">
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+
+<footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="lalastitle text-xl">
+          <a routerLink="/home" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}"
+            ariaCurrentWhenActive="page"
+        >AM! TRACKER</a>
+        </span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="font-size:12px">© 2025 AM! Tracker —
+        The information presented on this website about Adopt Me! pets, including images and text, is intellectual property of Uplift Games LLC, DreamCraft, and/or Roblox. 
+        <br>
+        AM! Tracker is not produced by, endorsed by, supported by, or affiliated with any of these companies.
+      </p>
+      
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a href="https://www.linkedin.com/in/dalilasolis/" class="fa fa-linkedin ml-3 text-gray-400" style="font-size:22px"></a>
+          <a href="https://github.com/d1solis" class="fa fa-github ml-3 text-gray-400" style="font-size:22px"></a>
+        </span>
+      </span>
+    </div>
+  </footer>
