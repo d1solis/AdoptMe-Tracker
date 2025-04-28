@@ -1,0 +1,15 @@
+h1 {
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+p, button{
+    font-family: "Rambla", sans-serif;
+}
+
+.errormsg{
+    color:#51a2fe
+}
+
+.lalastitle {
+    font-family: "Luckiest Guy", sans-serif;
+}

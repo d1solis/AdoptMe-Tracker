@@ -1,0 +1,52 @@
+<!-- SEARCH PAGE -->
+
+<section class="text-gray-600 body-font bg-[url('/assets/pinkwallpaper.jpg')] bg-center bg-cover">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap object-center items-center justify-center">
+      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+        <h1 class="title-font font-medium text-7xl text-gray-900 text-center text-white">Search</h1>
+        <p class="leading-relaxed mt-4 text-center text-white">Easily find any pet in Adopt Me! by typing its <b>name</b> into the search bar. Whether you're looking for a specific rarity or just checking if a pet is in the game, this tool makes it quick and simple!</p>
+        <br>
+        </div>
+
+      <form class="w-full max-w-2xl mx-auto">   
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-900">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for pets by name..." required />
+            <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+
+<footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="lalastitle text-xl">
+          <a routerLink="/home" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}"
+            ariaCurrentWhenActive="page"
+        >AM! TRACKER</a>
+        </span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="font-size:12px">© 2025 AM! Tracker —
+        The information presented on this website about Adopt Me! pets, including images and text, is intellectual property of Uplift Games LLC, DreamCraft, and/or Roblox. 
+        <br>
+        AM! Tracker is not produced by, endorsed by, supported by, or affiliated with any of these companies.
+      </p>
+      
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a href="https://www.linkedin.com/in/dalilasolis/" class="fa fa-linkedin ml-3 text-gray-400" style="font-size:22px"></a>
+          <a href="https://github.com/d1solis" class="fa fa-github ml-3 text-gray-400" style="font-size:22px"></a>
+        </span>
+      </span>
+    </div>
+  </footer>
+

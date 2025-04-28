@@ -1,0 +1,216 @@
+<!-- ORIGIN PAGE -->
+
+<section class="text-gray-600 body-font bg-gray-200">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="/assets/originpagepic.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">Pet Origin</h1>
+        <p class="mb-8 leading-relaxed">Discover the <b>origin</b> of each pet in Adopt Me!—whether they were introduced through Eggs, Events, Gamepasses, or special Promotions! Use this search tool to filter pets by their type, making it easier to learn where your favorite pets came from and how they were originally released.</p>
+        <div class="flex w-full md:justify-start justify-center items-end">
+
+          <form method="post">
+            <!-- Label for Dropdown -->
+            <label for="originType" class="minititle block mb-2 text-sm font-medium text-gray-900">Select Origin Type:</label>
+          
+            <!-- Dropdown -->
+            <select id="originType" name="originType" [(ngModel)]="myOriginType" class="form-select w-full text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 h-10 text-sm px-4 py-2 mb-4">
+              <option value="" selected disabled>-------- Please choose an origin type --------</option>
+              <option value="egg">Eggs</option>
+              <option value="event">Events</option>
+              <option value="gamepass">Gamepasses</option>
+              <option value="box">Boxes / Bait</option>
+              <option value="shop">Shops / Locations</option>
+              <option value="starRewards">Star Rewards</option>
+              <option value="fairground">Fairgrounds</option>
+            </select>
+          
+            <div [ngSwitch]="myOriginType">
+              <div *ngSwitchCase="'egg'">
+                 <h1>Eggs</h1>
+                 <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                  <li style="margin-right: 20px;"><a href="#">Aussie Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Blue Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Christmas Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Christmas Future Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Cracked Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Danger Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Desert Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Diamond Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Easter 2020 Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Easter Eggy Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Farm Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Fool Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Fossil Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Garden Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Golden Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Japan Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Jungle Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Moon Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Mythic Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Ocean Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pink Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Retired Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Safari Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Southeast Asia Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Urban Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Woodland Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Zodiac Minion Egg</a></li>
+                </ul>                             
+              </div>
+
+              <div *ngSwitchCase="'event'">
+                 <h1>Events</h1>
+                 <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                  <li style="margin-right: 20px;"><a href="#">Adopt Me! 4th Birthday</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Adopt Me! 5th Birthday</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Adopt Me! 6th Birthday</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Adopt Me! 7th Birthday</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Celestial Summer Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Christmas Event (2019)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Dia De Los Muertos Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Día De Los Muertos Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Easter Event (2021)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Easter Event (2022)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Easter Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">GOSH 2022 Update</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Games Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Gardon Hop Obby Event</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Event (2019)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Event (2020)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Event (2021)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Event (2022)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Event (2023)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Ocean Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pride Event (2022)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pride Event (2023)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Roblox Classic Event (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Spring Festival (2023)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">St. Patrick's Day Update</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Summer Festival (2023)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Valentine's Event (2025)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Winter Event (2022)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Winter Festival (2022)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Winter Festival (2023)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Winter Festival (2024)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Winter Holiday (2020)</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Winter Holiday (2021)</a></li>
+                </ul>                   
+              </div>
+
+              <div *ngSwitchCase="'gamepass'">
+                 <h1>Gamepasses</h1>
+                 <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                  <li style="margin-right: 20px;"><a href="#">DJ Gamepass</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pets Plus Subscription USD</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Purchasing 5 UGC Items in Accessory Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Space Bundle gamepass</a></li>
+                </ul>                
+              </div>
+
+              <div *ngSwitchCase="'box'">
+                <h1>Boxes / Bait</h1>
+                <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                  <li style="margin-right: 20px;"><a href="#">Bat Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Capuchin Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Christmas Pudding Pup Bait</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Duckling Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Easter Eggy Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Flaming Zebra Bait</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Gorilla Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Chick Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Halloween Mummy Cat Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Hare Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Hermit Crab Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Ice Soup Bait</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Ice Tray</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Lunar New Year Gift Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Lunar Tiger Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Mahi Spinning Rod</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Monkey Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Mud Ball</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pony Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Rat Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Scarecrow Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Shiver Cone Bait</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Walrus Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Wolf Box</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Wrapped Doll</a></li>
+                </ul>                
+             </div>
+
+             <div *ngSwitchCase="'shop'">
+                <h1>Shops / Locations</h1>
+                <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                  <li style="margin-right: 20px;"><a href="#">Accessory Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Beach Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Bridge near Neighborhood</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Camping Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Dessert Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Fall Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Hanger Building</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Outside of Nursery</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pet Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Pool Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Rain Pet Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Sky Castle</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Snowy Igloo Shop</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Stand near Playground</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Stand outside Nursery</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Stand outside Playground</a></li>
+                </ul>                              
+             </div>
+
+             <div *ngSwitchCase="'starRewards'">
+                <h1>Star Rewards</h1>
+                <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                  <li style="margin-right: 20px;"><a href="#">Diamond Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Golden Egg</a></li>
+                  <li style="margin-right: 20px;"><a href="#">Star Rewards</a></li>
+                </ul>                
+             </div>
+
+             <div *ngSwitchCase="'fairground'">
+              <h1>Fairgrounds</h1>
+              <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                <li style="margin-right: 20px;"><a href="#">Capuchin Fairground</a></li>
+                <li style="margin-right: 20px;"><a href="#">Gorilla Fairground</a></li>
+                <li style="margin-right: 20px;"><a href="#">Monkey Fairground</a></li>
+              </ul>              
+            </div>
+          </div>
+          </form>
+
+        </div>
+        </div>
+      </div>
+  </section>
+
+<!-- FOOTER -->
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <span class="lalastitle text-xl">
+        <a routerLink="/home" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact:true}"
+          ariaCurrentWhenActive="page"
+      >AM! TRACKER</a>
+      </span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="font-size:12px">© 2025 AM! Tracker —
+      The information presented on this website about Adopt Me! pets, including images and text, is intellectual property of Uplift Games LLC, DreamCraft, and/or Roblox. 
+      <br>
+      AM! Tracker is not produced by, endorsed by, supported by, or affiliated with any of these companies.
+    </p>
+    
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a href="https://www.linkedin.com/in/dalilasolis/" class="fa fa-linkedin ml-3 text-gray-400" style="font-size:22px"></a>
+        <a href="https://github.com/d1solis" class="fa fa-github ml-3 text-gray-400" style="font-size:22px"></a>
+      </span>
+    </span>
+  </div>
+</footer>

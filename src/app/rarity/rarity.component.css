@@ -1,0 +1,21 @@
+h1, h2 {
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+p {
+    font-family: "Rambla", sans-serif;
+}
+
+.discoverlink {
+    color: #e42471;
+    font-family: "Rambla", sans-serif;
+    font-weight: bold;
+}
+
+.lalasline {
+    background-color: #e42471
+}
+
+.lalastitle {
+    font-family: "Luckiest Guy", sans-serif;
+}
